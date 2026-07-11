@@ -1,0 +1,8 @@
+project: mayhemheroes/Simd
+target: simd_load_fuzzer
+cmds:
+  - cmd: /mayhem/simd_load_fuzzer
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/simd_load_fuzzer/testsuite

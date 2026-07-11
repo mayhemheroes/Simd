@@ -1,0 +1,20 @@
+# .dockerignore for the commit-image build.
+# Keep the FULL repo (including .git) in the context; drop only local build
+# artifacts and editor/OS cruft.
+
+# ── Build outputs / local cruft ──────────────────────────────────────────────
+build/
+build-fuzz/
+build-test/
+cmake-build-*/
+*.o
+*.a
+*.so
+*.dylib
+**/__pycache__/
+
+# ── Editor / OS noise ────────────────────────────────────────────────────────
+.DS_Store
+*.swp
+*~
+.idea/
